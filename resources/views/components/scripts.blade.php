@@ -33,11 +33,10 @@
                             return
                         }
 
-                        const from = evt?.from?.dataset?.name
-                        const to = evt?.to?.dataset?.name
+                        const from = evt ? .from ? .dataset ? .name
+                        const to = evt ? .to ? .dataset ? .name
 
-                        this.wireComponent.call(
-                            this.wireOnSortOrderChange,
+                        @this[this.wireOnSortOrderChange](
                             this.sortOrder,
                             previousSortOrder,
                             this.name,
@@ -55,4 +54,5 @@
             }
         }
     }
+
 </script>
